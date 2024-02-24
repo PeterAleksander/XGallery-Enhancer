@@ -59,5 +59,13 @@ observer.observe(document.body, {
   attributes: false,
 });
 
+// Listen for messages from the popup
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+  if (request.action === "toggleStyles") {
+    // Toggle styles logic here
+    updatePageStyles(); // This is where you call your function to toggle styles
+  }
+});
+
 // Run checkURL when the script loads to apply changes if already on a media page
 checkURL();
