@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Gallery Xhancer",
     "version": "1.0",
-    "description": "Modify CSS of webpages.",
+    "description": "Refocus Twitter Gallery Pages to display images full across the canvas.",
     "permissions": ["tabs", "webNavigation"],
     "background": {
       "service_worker": "background.js"
