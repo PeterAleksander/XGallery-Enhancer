@@ -68,6 +68,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 });
 
 //TODO Add screen fix for Instagram as well
+//TODO Add ON/OFF Toggle for css (reload page on toggle to affect CSS)
 
 // Run checkURL when the script loads to apply changes if already on a media page
 checkURL();
