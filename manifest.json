@@ -1,19 +1,24 @@
 {
-    "manifest_version": 3,
-    "name": "Gallery Xhancer",
-    "version": "1.0",
-    "description": "Refocus Twitter Gallery Pages to display images full across the canvas.",
-    "icons": {
-      "16": "icon16.png",
-      "32": "icon32.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
-    },
-    "content_scripts": [
-      {
-        "matches": ["https://twitter.com/*"],
-        "js": ["content.js"]
-      }
-    ]
-    
-  }
+  "manifest_version": 3,
+  "name": "Gallery Xhancer",
+  "version": "1.0",
+  "description": "Refocus Twitter Gallery Pages to display images full across the canvas.",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
